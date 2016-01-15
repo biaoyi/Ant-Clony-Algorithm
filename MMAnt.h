@@ -5,9 +5,6 @@
 
 class MMAnt : public Ant{
 public:
-//    bool greed;                           //是否使用贪心原则选择下一城市
-
-public:
     MMAnt();
     virtual void init(int init_city = -1);         //初始化
     virtual void move();                           //移动

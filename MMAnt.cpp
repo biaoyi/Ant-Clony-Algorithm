@@ -91,7 +91,6 @@ int MMAnt::chooseCity()
                 break;
             }
         }
-        //selected = allowed.front();
     }
 
     return selected;

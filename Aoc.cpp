@@ -4,6 +4,7 @@ Aoc::Aoc()
 {
 
 }
+
 Aoc::~Aoc()
 {
 
@@ -50,21 +51,14 @@ void Aoc::update()
     {
         for(int j = 1; j < N_CITY; j++)
         {
-//            c_c = ants[i].tabuk[j];
-//            c_f = ants[i].tabuk[j-1];
             m = ants[i]->travel[j];
             n = ants[i]->travel[j-1];
             /*计算信息素，公式2*/
             tmp_pher[n][m] += PHER/ants[i]->distance;
-            /*gai jin bu fen*/
-            //tmp_pher[n][m] += PHER/city_distance[n][m];
             tmp_pher[m][n] = tmp_pher[n][m];
         }
-//        tmp_pher[ants[i].tabuk[N_CITY - 1]][ants[i].tabuk[0]] += PHER/ants[i].distance;
-//        tmp_pher[ants[i].tabuk[0]][ants[i].tabuk[N_CITY - 1]] = tmp_pher[ants[i].tabuk[N_CITY - 1]][ants[i].tabuk[0]];
         n = ants[i]->travel[0];
         tmp_pher[n][m] += PHER/ants[i]->distance;
-       // tmp_pher[n][m] += PHER/city_distance[n][m];
         tmp_pher[m][n] = tmp_pher[n][m];
     }
 
