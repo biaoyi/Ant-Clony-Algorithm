@@ -1,3 +1,2 @@
 # Ant-Clony-Algorithm
-now I have impleted basic ant clony algorithm and max-min ant clony algorithm
-the author is the page host @http://tieba.baidu.com/p/1313593084 and I just reorganize
+实现了基本蚁群算法和最大最小蚂蚁一群算法，实现了基于栅格环境下的蚁群算法
