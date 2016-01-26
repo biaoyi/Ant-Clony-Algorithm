@@ -96,7 +96,7 @@ void Aoc::search()
 
         update();
 
-        sprintf(buff,"[%d]:%0.0f\n",i+1,best_ant->distance);
+        sprintf(buff,"[%d]:%f\n",i+1,best_ant->distance);
         printf("%s",buff);
     }
 }
